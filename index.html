@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== ШАПКА ====== -->
+    <header class="header">
+        <div class="container">
+            <!-- ====== ЛОГО ====== -->
+            <div class="logo">
+                Лого
+            </div>
+            <!-- ====== НАЗВАНИЕ ====== -->
+            <h1 class="site-title">
+                Название сайта
+            </h1>
+            <!-- ====== НАВИГАЦИЯ ====== -->
+            <nav class="nav">
+              <ul>
+                <li><a href="#">Ссылка меню 1</a></li>
+                <li><a href="#">Ссылка 2</a></li>
+                <li><a href="#">Ссылка 3</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- ====== ОСНОВНОЙ КОНТЕНТ ====== -->
+  <main class="main">
+    <div class="container">
+
+      <!-- СЕКЦИЯ: Список гиперссылок -->
+      <section id="links">
+        <h2>Список гиперссылок</h2>
+        <ul class="link-list">
+            <li><p>Ссылка 1: <a href="http://kubsu.ru">Абсолютная на главную страницу kubsu.ru (HTTP)</a></p></li>
+            <li><p>Ссылка 2: <a href="https://kubsu.ru">Абсолютная на главную страницу kubsu.ru (HTTPS)</a></p></li>
+            <li><p>Ссылка 3: <a href="#"><img src="image.png" alt="С изображением"></a></p></li>
+            <li><p>Ссылка 4: <a href="internal.html">Сокращённая на внутреннюю страницу</a></p></li>
+            <li><p>Ссылка 5: <a href="/">Сокращённая на главную страницу</a></p></li>
+            <li><p>Ссылка 6: <a href="#fragment">На фрагмент текущей страницы</a></p></li>
+            <li><p>Ссылка 7: <a href="?param1=1&param2=2&param3=3">С тремя параметрами в URL</a></p></li>
+            <li><p>Ссылка 8: <a href="?id=123">С параметром id в URL</a></p></li>
+            <li><p>Ссылка 9: <a href="same-dir.html">Относительная на страницу в текущем каталоге</a></p></li>
+            <li><p>Ссылка 10: <a href="about/page.html">Относительная на страницу в каталоге about</a></p></li>
+            <li><p>Ссылка 11: <a href="../upper.html">Относительная на страницу в каталоге уровнем выше</a></p></li>
+            <li><p>Ссылка 12: <a href="../../two-up.html">Относительная на страницу в каталоге двумя уровнями выше</a></p></li>
+            <li><p>Ссылка 13: Этот университет находится в <a href="https://kubsu.ru">Краснодаре</a>.</p></li>
+            <li><p>Ссылка 14: <a href="https://example.com#fragment">На фрагмент страницы стороннего сайта</a></p></li>
+            <li>
+              <p>Ссылка 15: Ссылки из прямоугольных и круглых областей картинки</p>
+              <img src="image.png" usemap="#image-map" alt="Image map">
+              <map name="image-map">
+                <area shape="rect" coords="0,0,100,100" href="rect-link.html" alt="Rect link">
+                <area shape="circle" coords="150,150,50" href="circle-link.html" alt="Circle link">
+              </map>
+            </li>
+            <li><p>Ссылка 16: <a href="">С пустым href</a></p></li>
+            <li><p>Ссылка 17: <a>Без href</a></p></li>
+            <li><p>Ссылка 18: <a href="#" rel="nofollow">Запрещена для перехода поисковикам</a></p></li>
+            <li><p>Ссылка 19: <a href="#" rel="noindex">запрещенную для индексации поисковиками</a></p></li>
+            <li>
+              <p>Ссылка 20: Нумерованный список ссылок с атрибутом title</p>
+              <ol>
+                <li><a href="#" title="Title 1">Ссылка 20.1</a></li>
+                <li><a href="#" title="Title 2">Ссылка 20.2</a></li>
+                <li><a href="#" title="Title 3">Ссылка 20.3</a></li>
+              </ol>
+            </li>
+            <li><p>Ссылка 21: <a href="ftp://user:pass@ftp.example.com/file.txt">На файл на FTP-сервере с авторизацией</a></p></li>
+        </ul>
+      </section>
+
+      <!-- СЕКЦИЯ: Таблица -->
+      <section id="table">
+        <h2>Таблица</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Колонка 1</th>
+              <th>Колонка 2</th>
+              <th>Колонка 3</th>
+              <th>Колонка 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">Объединённая ячейка</td>
+              <td colspan="2">Объединённая ячейка</td>
+            </tr>
+            <tr>
+              <td>Ячейка 21</td><td>Ячейка 22</td><td>Ячейка 23</td><td>Ячейка 24</td>
+            </tr>
+            <tr>
+              <td>Ячейка 31</td><td>Ячейка 32</td><td>Ячейка 33</td><td>Ячейка 34</td>
+            </tr>
+            <tr>
+              <td>Ячейка 41</td><td>Ячейка 42</td><td>Ячейка 43</td><td>Ячейка 44</td>
+            </tr>
+            <tr>
+              <td>Ячейка 51</td><td>Ячейка 52</td><td>Ячейка 53</td><td>Ячейка 54</td>
+            </tr>
+            <tr>
+              <td>Ячейка 61</td><td>Ячейка 62</td><td>Ячейка 63</td><td>Ячейка 64</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- СЕКЦИЯ: Форма -->
+      <section id="form">
+        <h2>Форма обратной связи</h2>
+        <form>
+          <label for="fio">ФИО:</label>
+          <input type="text" id="fio" name="fio" required>
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="birthdate">Дата рождения:</label>
+          <input type="date" id="birthdate" name="birthdate">
+
+          <p>Пол:</p>
+          <label><input type="radio" name="gender" value="male"> Мужской</label>
+          <label><input type="radio" name="gender" value="female"> Женский</label>
+
+          <label for="language">Любимый язык программирования:</label>
+          <select id="language" name="language" multiple>
+            <option>Python</option>
+            <option>JavaScript</option>
+            <option>Java</option>
+            <option>C++</option>
+            <option>PHP</option>
+          </select>
+
+          <label for="bio">Биография:</label>
+          <textarea id="bio" name="bio"></textarea>
+
+          <label><input type="checkbox" required> С контрактом ознакомлен(а)</label>
+
+          <button type="submit">Сохранить</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+    <!-- ====== ПОДВАЛ ====== -->
+    <footer class="footer">
+        (с) Леонов Всеволод
+    </footer>
+
+</body>
+</html>
